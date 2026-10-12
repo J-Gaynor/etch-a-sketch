@@ -1,0 +1,1 @@
+let canvasContainer = document.querySelector(".canvas-container");
