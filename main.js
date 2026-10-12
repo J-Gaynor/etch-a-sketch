@@ -1,4 +1,5 @@
 let canvasContainer = document.querySelector(".canvas-container");
+let rows, squares;
 
 // Populate grid
 function gridCreator() {
@@ -13,5 +14,14 @@ function gridCreator() {
         canvasContainer.append(row);
     }
 }
-
 gridCreator();
+
+// Change colour
+function onHover(e) {
+    const targetSquare = e.target;
+    targetSquare.classList.toggle("grey");
+}
+
+rows = Array.from(canvasContainer.children);
+rows.forEach(square => square.addEventListener("mouseover", onHover));
+
