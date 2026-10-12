@@ -16,15 +16,16 @@ h6 {
 }
 
 .canvas-container {
-    border: 2px black solid;
     margin-top: 8px;
-    width: 512px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .row {
     background-color: aqua;
     display: flex;
-    width: 512px;
+    max-width: 512px;
 }
 
 .square {
