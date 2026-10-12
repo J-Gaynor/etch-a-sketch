@@ -44,6 +44,8 @@ function newGridPrompt() {
             return;
         }
         rowNumber = parseInt(input);
+        canvasContainer.replaceChildren();
+        gridCreator(rowNumber);
     } while (isNaN(rowNumber) || rowNumber < 1 || rowNumber > 100)
 }
 
